@@ -18,8 +18,7 @@ apt-key adv --keyserver keyserver.ubuntu.com --recv E1DF1F24 \
  && update-locale LANG=C.UTF-8 LC_MESSAGES=POSIX \
  && locale-gen en_US.UTF-8 \
  && dpkg-reconfigure locales \
- && gem install --no-document bundler \
- && rm -rf /var/lib/apt/lists/* # 20150220
+ && gem install --no-document bundler
 
 mkdir -p /app
 cp -r assets/setup/ /app/setup/
